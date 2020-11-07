@@ -8,7 +8,7 @@ class DetailScreen extends StatelessWidget {
           child: Hero(
             tag: 'imageHero',
             child: Image.network(
-              'https://picsum.photos/250?image=99',
+              'https://picsum.photos/250?image=9',
             ),
           ),
         ),
