@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-class FirstScreen extends StatelessWidget {
+import 'package:flutter_lab_4_1/Ex2/Second_route.dart';
+class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Screen'),
+        title: Text('First Route'),
       ),
       body: Center(
-        child: ElevatedButtons(
-          child: Text('Launch screen'),
+        child: ElevatedButton(
+          child: Text('Open route'),
           onPressed: () {
-            // Navigate to the second screen using a named route.
-            Navigator.pushNamed(context, '/second');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondRoute()),
+            );
           },
         ),
       ),
