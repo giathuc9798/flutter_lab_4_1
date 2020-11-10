@@ -7,8 +7,9 @@ import 'package:flutter_lab_4_1/Ex4/ExtractArgumentScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/HomeScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/PassArgumentScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/ScreenArguments_class.dart';
+import 'package:flutter_lab_4_1/Ex5/HomeScreen.dart';
 
-void main() => runApp(HeroApp3());
+void main() => runApp(HeroApp4());
 
 class HeroApp extends StatelessWidget {
   @override
@@ -83,3 +84,15 @@ class HeroApp3 extends StatelessWidget {
         });
   }
 }
+
+
+class HeroApp4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Returning Data',
+    home: HomeScreen1(),
+    );
+  }
+}
+
