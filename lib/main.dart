@@ -8,8 +8,10 @@ import 'package:flutter_lab_4_1/Ex4/HomeScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/PassArgumentScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/ScreenArguments_class.dart';
 import 'package:flutter_lab_4_1/Ex5/HomeScreen.dart';
+import 'package:flutter_lab_4_1/Ex6/todo.dart';
+import 'package:flutter_lab_4_1/Ex6/todoScreen.dart';
 
-void main() => runApp(HeroApp4());
+void main() => runApp(HeroApp5());
 
 class HeroApp extends StatelessWidget {
   @override
@@ -92,6 +94,25 @@ class HeroApp4 extends StatelessWidget {
     return MaterialApp(
       title: 'Returning Data',
     home: HomeScreen1(),
+    );
+  }
+}
+
+
+class HeroApp5 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Passing Data',
+    home: TodosScreen(
+      todos: List.generate(
+        20,
+        (i) => Todo(
+          'Todo $i',
+          'A description of what needs to be done for Todo $i',
+        ),
+      ),
+    ),
     );
   }
 }
