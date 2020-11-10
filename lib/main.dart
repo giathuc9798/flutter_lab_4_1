@@ -11,7 +11,7 @@ import 'package:flutter_lab_4_1/Ex5/HomeScreen.dart';
 import 'package:flutter_lab_4_1/Ex6/todo.dart';
 import 'package:flutter_lab_4_1/Ex6/todoScreen.dart';
 
-void main() => runApp(HeroApp5());
+void main() => runApp(HeroApp());
 
 class HeroApp extends StatelessWidget {
   @override
