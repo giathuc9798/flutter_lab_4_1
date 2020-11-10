@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab_4_1/Ex4/ScreenArguments_class.dart';
+
 class ExtractArgumentsScreen extends StatelessWidget {
   static const routeName = '/extractArguments';
-
   @override
   Widget build(BuildContext context) {
     // Extract the arguments from the current ModalRoute settings and cast
     // them as ScreenArguments.
     final ScreenArguments args = ModalRoute.of(context).settings.arguments;
-
     return Scaffold(
       appBar: AppBar(
         title: Text(args.title),

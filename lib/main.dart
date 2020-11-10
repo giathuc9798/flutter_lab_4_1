@@ -6,8 +6,9 @@ import 'package:flutter_lab_4_1/Ex3/SecondScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/ExtractArgumentScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/HomeScreen.dart';
 import 'package:flutter_lab_4_1/Ex4/PassArgumentScreen.dart';
+import 'package:flutter_lab_4_1/Ex4/ScreenArguments_class.dart';
 
-void main() => runApp(HeroApp2());
+void main() => runApp(HeroApp3());
 
 class HeroApp extends StatelessWidget {
   @override
@@ -42,6 +43,7 @@ class HeroApp2 extends StatelessWidget {
     );
   }
 }
+
 class HeroApp3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
